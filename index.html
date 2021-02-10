@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Etch A Sketch</title>
+</head>
+<body>
+    <div id="grid-title-container">
+        <h1 id="title">Etch-a-Sketch</h1>
+        <div id="grid"></div>
+    </div>
+    
+    <div id="controls">
+        <h1 id="controls-header">Controls</h1>
+        <button id="clear">CLEAR</button>
+        <button id="new">NEW</button>
+
+        <div class="slide-container">
+            <p>Number of cells</p>
+            <input type="range" min="1" max="64" value="16" class="slider" id="range-slider">
+            <p id="para-nr-of-cells"></p>
+        </div>
+
+        <form id="radio-buttons">
+            <label class="radio-input" id="lbl-color-picker" for='color-picker'>
+                <input checked='true' type='radio' name='color' value='user'>
+                Color
+                <input id='color-picker' type='color'>
+            </label>
+
+            <label class="radio-input" for='darken'>
+                <input type='radio' name='color' value='darken'>
+                Darken
+            </label><br>
+
+            <label class="radio-input" for='random'>
+                <input type='radio' name='color' value='random'>   
+                Random
+            </label><br>           
+        </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

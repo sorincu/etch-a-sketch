@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fafcff;
+    font-family: 'Press Start 2P', monospace;
+}
+
+/* Grid container */
+#title {
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+#grid-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#grid {
+    margin-top: 100px;
+    display: grid;
+    width: 512px;
+    height: 512px;
+    box-shadow: 0px 15px 30px rgb(0 0 0 / 60%);
+}
+
+/* Cells */
+.cell {
+    border: 1px rgb(224, 224, 224) dashed;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.cell:hover {
+    background-color: yellow !important;
+}
+
+/* Controls container */
+#controls {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+#controls-header {
+    padding: 50px 0 100px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+button {
+    font-family: 'Press Start 2P', monospace;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+/* Slider */
+.slide-container {
+    width: 100%;
+    text-align: center;
+  }
+  
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #f5f500;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #f5f500;
+    cursor: pointer;
+}
+
+/* Form radio buttons */
+#radio-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+  
+.radio-input {
+    margin: 10px 3px;
+}
+
+input {
+    cursor: pointer;
+}
+
+#lbl-color-picker {
+    padding-left: 48px;
+    padding-bottom: 5px;
+}
+
